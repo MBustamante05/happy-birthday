@@ -1,10 +1,10 @@
 // Aquí puedes añadir las URLs de tus fotos
 const photos = [
-  { caption: "Meras risas 💫", image: "/images/recuerdo1.jpeg"},
-  { caption: "Meros recuerdos ✨", image: "/images/recuerdo2.jpeg"},
-  { caption: "Que falla 😄", image: "/images/recuerdo3.jpeg"},
-  { caption: "Que te hayas 🌟", image: "/images/recuerdo4.jpeg"},
-  { caption: "Fuyido 💕", image: "/images/recuerdo5.jpeg"},
+  { caption: "Meras risas 💫", image: "images/recuerdo1.jpeg"},
+  { caption: "Meros recuerdos ✨", image: "images/recuerdo2.jpeg"},
+  { caption: "Que falla 😄", image: "images/recuerdo3.jpeg"},
+  { caption: "Que te hayas 🌟", image: "images/recuerdo4.jpeg"},
+  { caption: "Fuyido 💕", image: "images/recuerdo5.jpeg"},
 ];
 
 let currentIndex = 0;
