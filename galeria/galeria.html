@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Recuerdos - Mariana</title>
+    <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+    <audio id="bg-music" src="/audios/pussy.mp3" autoplay loop></audio>
+    <!-- Decoración de corazones flotantes -->
+    <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 20%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 30%; animation-delay: 4s;"></div>
+    <div class="heart" style="left: 40%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 50%; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 60%; animation-delay: 5s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 2.5s;"></div>
+    <div class="heart" style="left: 80%; animation-delay: 4.5s;"></div>
+    <div class="heart" style="left: 90%; animation-delay: 1.5s;"></div>
+
+    <!-- Estrellas brillantes -->
+    <div class="sparkle" style="top: 15%; left: 15%; animation-delay: 0s;"></div>
+    <div class="sparkle" style="top: 25%; left: 85%; animation-delay: 0.5s;"></div>
+    <div class="sparkle" style="top: 45%; left: 25%; animation-delay: 1s;"></div>
+    <div class="sparkle" style="top: 65%; left: 75%; animation-delay: 1.5s;"></div>
+    <div class="sparkle" style="top: 85%; left: 45%; animation-delay: 0.7s;"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>💕 Nuestros Recuerdos 💕</h1>
+            <p>Cada momento contigo es especial</p>
+        </div>
+
+        <div class="carousel-container">
+            <button class="nav-btn btn-prev" onclick="prevPhoto()">←</button>
+            
+            <div class="carousel" id="carousel">
+                <!-- Las tarjetas se generarán dinámicamente -->
+            </div>
+
+            <button class="nav-btn btn-next" onclick="nextPhoto()">→</button>
+        </div>
+
+        <div class="indicators" id="indicators"></div>
+    </div>
+
+    <button class="back-btn" onclick="window.location.href='../flores/index.html'">🌸 Volver a las Flores</button>
+
+    <script src="galeria.js"></script>
+</body>
+</html>
