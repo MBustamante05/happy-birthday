@@ -46,10 +46,10 @@ body {
 
 .show-btn {
   position: fixed;
-  bottom: 10vmin;
+  top: 28vmin;
   left: 50%;
   transform: translateX(-50%) scale(0);
-  padding: 2vmin 5vmin;
+  padding: 2vmin 3vmin;
   font-size: 4vmin;
   font-weight: 600;
   border: none;
