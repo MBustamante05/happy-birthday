@@ -1,10 +1,10 @@
 // Aquí puedes añadir las URLs de tus fotos
 const photos = [
-  { caption: "Meras risas 💫", image: "../images/recuerdo1.jpeg"},
-  { caption: "Meros recuerdos ✨", image: "../images/recuerdo2.jpeg"},
-  { caption: "Que falla 😄", image: "../images/recuerdo3.jpeg"},
-  { caption: "Que te hayas 🌟", image: "../images/recuerdo4.jpeg"},
-  { caption: "Fuyido 💕", image: "../images/recuerdo5.jpeg"},
+  { caption: "Meras risas 💫", image: "../images/recuerdo1.jpeg" },
+  { caption: "Meros recuerdos ✨", image: "../images/recuerdo2.jpeg" },
+  { caption: "Que falla 😄", image: "../images/recuerdo3.jpeg" },
+  { caption: "Que te hayas 🌟", image: "../images/recuerdo4.jpeg" },
+  { caption: "Fuyido 💕", image: "../images/recuerdo5.jpeg" },
 ];
 
 let currentIndex = 0;
@@ -19,7 +19,9 @@ function createPhotoCards() {
     card.className = "photo-card";
     card.innerHTML = `
                     <div class="photo-wrapper">
-                        <img src="${photo.image}" alt="Photo ${index + 1}" class="photo-image" />
+                        <img src="${photo.image}" alt="Photo ${
+      index + 1
+    }" class="photo-image" />
                     </div>
                     <div class="photo-caption">${photo.caption}</div>
                 `;
@@ -95,6 +97,15 @@ function updateCarousel() {
     } else {
       indicator.classList.remove("active");
     }
+  });
+
+  // Reproducir música después del primer click
+  const music = document.getElementById("bg-music");
+  music.play().catch(() => {
+    // Si falla, lo intentamos de nuevo después
+    document.addEventListener("click", () => music.play(), {
+      once: true,
+    });
   });
 }
 

@@ -46,10 +46,10 @@ body {
 
 .show-btn {
   position: fixed;
-  top: 28vmin;
+  bottom: 10vmin;
   left: 50%;
   transform: translateX(-50%) scale(0);
-  padding: 2vmin 3vmin;
+  padding: 2vmin 5vmin;
   font-size: 4vmin;
   font-weight: 600;
   border: none;
@@ -1258,4 +1258,10 @@ body {
 }
 .not-loaded * {
   animation-play-state: paused !important;
+}
+
+@media screen and (max-width: 490px) {
+  .show-btn {
+    bottom: 140vmin;
+  }
 }
